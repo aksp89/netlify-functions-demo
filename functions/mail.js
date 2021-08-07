@@ -1,7 +1,7 @@
 const mailer = require("nodemailer");
 const transporter = mailer.createTransport({
     service: "Gmail",
-    port: 465,
+    //port: 465,
     auth: {
       user: "aksp89@gmail.com",
         pass: "GmailAK@19/06/89."

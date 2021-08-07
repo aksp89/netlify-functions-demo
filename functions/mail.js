@@ -4,8 +4,8 @@ const transporter = mailer.createTransport({
     port: 465,
     auth: {
       user: "aksp89@gmail.com",
-      pass: "GmailAK@19/06/89."
-    },
+        pass: "GmailAK@19/06/89."
+    }
     /*
     tls: {
       rejectUnauthorized: false
@@ -15,8 +15,8 @@ const transporter = mailer.createTransport({
 
 exports.handler = function (event, context, callback) {
 transporter.sendMail({
-    from: "aksp89@gmail.com",
-    to: "aksp89@gmail.com",
+    from: "Ankur",
+    to: "ankur@kapslock.in",
     subject: "Test",
     text: "test mail"
 }, function (err) {

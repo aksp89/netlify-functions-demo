@@ -1,12 +1,12 @@
 const mailer = require("nodemailer");
 const transporter = mailer.createTransport({
-    host: "mail.kapslock.in",
-    port: 465,
+    service: "Gmail",
+    port: 587,
     auth: {
-      user: "ankur@kapslock.in",
-        pass: "a190689k"
+      user: "aksp89@gmail.com",
+        pass: "GmailAK@19/06/89."
     },
-    
+
     tls: {
       rejectUnauthorized: false
     }
@@ -25,7 +25,7 @@ exports.handler = function (event, context, callback) {
 transporter.sendMail({
     from: "Ankur",
     to: "aksp89@gmail.com",
-    subject: "Test",
+    subject: "Test mail",
     text: "test mail"
 }, function (err) {
 if(err) {

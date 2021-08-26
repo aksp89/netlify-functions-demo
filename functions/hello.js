@@ -1,10 +1,8 @@
-const helloController = require("../controllers/hello-controller");
-
+const helloController = require("./controllers/hello-controller");
 exports.handler = function (event, context, callback) {
-    let data = JSON.parse(event.body);
-console.log(event);
+    let result = helloController.helloC();
     callback(null, {
 statusCode: 200,
-body: `hello ${data.name}`
+body: `result: ${result}`
     });
 }
